@@ -8,4 +8,5 @@ In order to make a variable if the type, the syntax is (choose whichever you wan
 - BigInt a{"123"}; //insert a string. Necessary for values above 2^64-1
 - BigInt b{a};     //insert another BigInt. 
 
-It has to be noted that storing the digits instead of the actual number is an unconvenient way of storing a number; the first often uses more than double the amount of bytes than the latter (8*log(2) times more, with some slightly approximated math). I might come around to making a better class that optimizes storage. In that case using a vector<long long> would probably work, although I haven't thought through how all implementations would work. 
+It has to be noted that storing the digits instead of the actual number is an unconvenient way of storing a number; the first sometimes use more than double the amount of bytes than the latter (8*log(2) times more, with some slightly approximated math). 
+I might come around to making a better class that optimizes storage. In that case using a vector<long long> would probably work, although I haven't thought through how all implementations would work. 
